@@ -1,0 +1,66 @@
+		#prodbody
+		{
+			/*border: 1px solid;*/
+			overflow: auto;
+			top:8%; 
+			position: fixed;
+			width: 100%;
+			height: 615px;
+			margin: 0 auto;
+			
+			
+		}
+
+		#showprod
+		{
+			/*border :1px solid;*/
+			float: left;
+			/*background: white;*/
+			width: 74%;
+			height: 100%;
+			margin-left: 3px;
+			position: relative;
+		}
+
+		#Categories
+		{
+			width: 25%;
+			float: left;
+			/*border: 1px solid;*/
+			height: 100%;
+			position: relative;	
+			/*border-radius: 10px;*/
+		}
+
+		.accordian ul
+		{
+			display: none;
+			padding: 5px;
+		}
+
+		.accordian ul li
+		{
+			background: white;
+			margin: 5px;
+			border-radius: 5px;
+			cursor: pointer;
+		font-family: cursive;
+		font-weight: bold;
+		text-align: center;
+		font-size: 25px;
+		}
+
+	.cathead
+	{
+		font-size: 35px;
+		border :1px solid;
+		cursor: pointer;
+		font-family: cursive;
+		font-weight: bold;
+		text-align: center;
+		color: white;
+		background: rgb(192,101,18);
+		border-radius: 15px;
+	}
+
+

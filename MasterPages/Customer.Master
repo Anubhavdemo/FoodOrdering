@@ -1,0 +1,153 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Customer.master.cs" Inherits="FoodOrdering.MasterPages.Customer" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <link href="../css/Bootstrap.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <script src="../Scripts/jquery.js"></script>
+    <script>
+        $(function () {
+            var ur = window.location.pathname;
+
+            ur = ur.substring(ur.lastIndexOf("/") + 1);
+            $('.nav li a').each(function () {
+                var href = $(this).attr("href");
+                href = href.replace(".aspx", "");
+                href = href.substring(href.lastIndexOf("/") + 1);
+                if (ur == href) {
+                    $(this).addClass("act");
+                }
+
+            });
+        });
+
+    </script>
+    <style>
+        .navmenu {
+            background-color: crimson;
+        }
+
+        li a {
+            color: white;
+            text-decoration: none;
+            font-family: cursive;
+            font-size: larger;
+        }
+
+        .nav > li > a:active {
+            background-color: #eee;
+        }
+
+        .act {
+            background-color: black;
+        }
+    </style>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <nav class="navbar navmenu">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <asp:HyperLink CssClass="navbar-brand"
+                        Text="FrEsH VeGeTaBlE"
+                        runat="server" NavigateUrl="~/Customer/Home.aspx"
+                        style="color:white;">
+                    </asp:HyperLink>
+
+                </div>
+                <ul class="nav navbar-nav">
+                    <li>
+                        <asp:HyperLink runat="server" Text="Home"
+                            NavigateUrl="~/Customer/Home.aspx">
+                        </asp:HyperLink>
+                    </li>
+                    <li>
+                        <asp:HyperLink runat="server" Text="Vegetable"
+                            NavigateUrl="~/Customer/Product.aspx">
+                        </asp:HyperLink>
+                    </li>
+                    <li class="">
+                        <asp:HyperLink runat="server" Text="My Cart"
+                            NavigateUrl="~/Customer/SecuredPage/ViewCart.aspx">
+                        </asp:HyperLink>
+                    </li>
+                    <li class="">
+                        <asp:HyperLink runat="server" Text="About Us"
+                            NavigateUrl="~/Customer/About.aspx">
+                        </asp:HyperLink>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="">
+                        <asp:LoginStatus runat="server"
+                            LogoutAction="Redirect"
+                            LogoutPageUrl="~/Account/Logout.aspx" />
+                    </li>
+                    <li class="">
+                        <a>
+                            <asp:LoginName runat="server" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="page">
+                <div id="wrapper">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+
+        <br />
+        <div class="footer">
+            <div class="well-lg" style="background-color: crimson; color: white;">
+
+                <div class="row">
+                    <div class="well-sm">
+                        <h2 class="text-center">Develop By Nilesh Yadav</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="well-sm">
+                        <h3 class="text-center">&copy; 2021 -All Right Resereved (R.A.D.A.V College)
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <span>
+                            <asp:Image ImageUrl="~/img/Mob.png" runat="server"
+                                Style="width: 64px; height: 64px;" />
+                        </span>9137691718
+                    </div>
+                    <div class="col-md-4">
+                        <span>
+                            <asp:Image ImageUrl="~/img/Whatsapp.png" runat="server"
+                                Style="width: 64px; height: 64px;" />
+                        </span>9137691718
+                    </div>
+                    <div class="col-md-4">
+                        <span>
+                            <asp:Image ImageUrl="~/img/Email.png" runat="server"
+                                Style="width: 64px; height: 64px;" />
+                        </span>nileshyadav11231@gmail.com
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

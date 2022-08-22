@@ -1,0 +1,209 @@
+@viewport
+{
+	width: device-width;
+}
+@-webkit-viewport
+{
+	width: device-width;
+}
+
+@-moz-viewport
+{
+	width: device-width;
+}
+
+@-o-viewport
+{
+	width: device-width;
+}
+
+@-ms-viewport
+{
+	width: device-width;
+}
+
+@media screen and (min-width :200px) and (max-width: 600px)
+{
+	body,#wrapper,#banner,.bannerimg,#footer,#resmenu,#Categories,.viewcartheading,.total_price,.product_container
+	{
+		width: 100%;
+	}
+
+		#banner
+		{
+			max-height: 250px;
+			/*position: absolute;*/
+			overflow: hidden;
+			
+		}
+
+		.bannerimg
+		{
+			height: 100%;
+			position: absolute;
+			/*display: none;*/
+		}
+
+		#resmenu
+		{
+			/*margin-top: -40px;*/
+			box-shadow: 10px;
+			overflow: auto;
+			position: fixed;
+			z-index: 110;
+			display: block;
+			height: 40px;
+
+		}
+		#resmenu h1
+		{
+			background: rgb(192,101,18);
+			font-family: cursive;
+			font-style: bold;
+			font-size: 28px;
+			color: white;
+			height: 100%;
+		}
+
+		#rmenu
+		{
+			position: fixed;
+			width: 100px;
+			left:-100px;
+			/*overflow: auto;*/
+		}
+
+		#rmenu ul
+		{
+			
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font-family: cursive;
+			overflow: auto;
+			background: rgb(254,170,56);
+			opacity: 0.8; 
+			border-top-right-radius: 20px;
+			border-bottom-right-radius: 20px;
+		}
+
+		#rmenu ul li a
+		{
+			color: white;
+			text-decoration: none;
+			display: block;
+			padding: 8px;
+			transition: background 1s;
+		}
+
+		#rmenu ul li a:hover
+		{
+			background: rgb(192,101,18);
+			color :white;
+			font-family: "Brush Script MT",cursive;
+			font-size: 22px;
+		}
+
+		#slidericon
+		{
+			cursor: pointer;
+			float: left;
+			background: url(img/nav-menu.jpg);
+			height: 100%;
+			width: 40px;
+		}
+
+
+	#menu,#inmenu
+	{
+		display: none;
+		/*max-height: 40px;*/
+	}
+
+	#divlogo
+	{
+		position: absolute;
+		max-height: 80px;
+			max-width: 80px;
+		transition: all 1.5s ease;
+	}
+
+	#divlogo img
+		{
+			position: absolute;
+			max-height: 80px;
+			max-width: 80px;
+		}
+
+
+	#footer
+	{
+		height: 80px;
+	}
+
+		
+		#prodbody
+		{
+			top: 6%;
+		}
+
+		.special
+		{
+			font-size: 25px;
+		}
+
+		.record
+		{
+			height: 290px;
+			 width: 250px;
+			 margin: 20px 24px;
+		}
+
+		#addbtn
+		{
+			margin-top: -5.5%;
+		}
+
+		#Categories
+		{
+			top: 4%;
+			height: 50%;
+		}
+
+	.accordian ul li
+	{
+		font-size: 16px;
+		margin: 4px;
+			border-radius: 4px;
+	}
+
+	.cathead
+	{
+		font-size: 22px;
+		border-radius: 8px;
+	}
+
+	.make_payment,.more_food
+	{
+		width:145px;
+		font-size: 20px;
+		margin: 0 10px;
+	}
+
+
+	.view_cart_product_img
+	{
+		margin-top: 10%;
+		margin-left :5%;
+	}
+
+	.viewcartheading,.total_price
+	{
+		left:0;
+	}
+
+	.add_qty_btn
+	{
+		margin-left: 20px;
+	}
+}

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="OFODB" Class="DBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=OFODB;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ApplicationServices" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tblcategory" Member="tblcategories">
+    <Type Name="tblcategory">
+      <Column Name="cid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="cname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[desc]" Member="desc" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblorder" Member="tblorders">
+    <Type Name="tblorder">
+      <Column Name="ono" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="bill" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbluser" Member="tblusers">
+    <Type Name="tbluser">
+      <Column Name="UserName" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="First_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Last_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbladdress" Member="tbladdresses">
+    <Type Name="tbladdress">
+      <Column Name="username" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="LandMark" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblproduct" Member="tblproducts">
+    <Type Name="tblproduct">
+      <Column Name="pid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="cid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="price" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[Desc]" Member="Desc" Type="System.String" DbType="VarChar(1500)" CanBeNull="true" />
+      <Column Name="image" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="type" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Author" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblorderdetails" Member="tblorderdetails">
+    <Type Name="tblorderdetail">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ono" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="pno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="pname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="quantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="total" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Unit" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

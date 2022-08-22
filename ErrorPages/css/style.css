@@ -1,0 +1,138 @@
+ol,ul {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+blockquote,q {
+	quotes:none;
+}
+blockquote:before,blockquote:after,q:before,q:after {
+	content:'';
+	content:none;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+
+.txt-rt {
+	text-align:right;
+}/* text align right */
+.txt-lt {
+	text-align:left;
+}/* text align left */
+.txt-center {
+	text-align:center;
+}/* text align center */
+.float-rt {
+	float:right;
+}/* float right */
+.float-lt {
+	float:left;
+}/* float left */
+.clear {
+	clear:both;
+}/* clear float */
+.pos-relative {
+	position:relative;
+}/* Position Relative */
+.pos-absolute {
+	position:absolute;
+}/* Position Absolute */
+.vertical-base {	
+	vertical-align:baseline;
+}/* vertical align baseline */
+.vertical-top {	
+	vertical-align:top;
+}/* vertical align top */
+nav.vertical ul li {	
+	display:block;
+}/* vertical menu */
+nav.horizontal ul li {	
+	display: inline-block;
+}/* horizontal menu */
+img {
+	max-width:100%;
+}
+/*--- end reset code ---*/
+body {
+	font-family: 'Raleway', sans-serif;
+}
+h1.header-w3ls {
+    text-align: center;
+    font-size: 60px;
+    letter-spacing:3px;
+    font-weight:normal;
+    text-transform: uppercase;
+    color: #fff;
+	position:absolute;
+	top:5%;
+	left:30%;
+}
+p.w3-agileits1 {
+	font-size: 40px;
+    font-weight: bold;
+    color: #f15f22;
+    position: absolute;
+    left: 47%;
+    text-transform: uppercase;
+    font-family: 'Poiret One', cursive;
+    top:15%;
+}
+p.w3-agileits2 {
+	font-size: 16px;
+    font-weight: normal;
+    color: #f15f22;
+    position: absolute;
+    left: 38%;
+    top: 75%;
+    letter-spacing: 1px;
+}
+img.w3l {
+	position: absolute;
+    width: 200px;
+    height: auto;
+    left: 45.5%;
+    top: 40%;
+}
+/*-- background effects --*/
+/* Header */
+.large-header {
+	position: relative;
+	width: 100%;
+    height : 600px;
+	background: #333;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}
+.demo-2 .large-header {
+	background-image: url('../images/banner.jpg');
+	background-position: center bottom;
+}
+.main-title {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+.demo-2 .main-title {
+	font-weight: 700;
+	font-size: 20em;
+	font-family: 'Poiret One', cursive;
+	padding-left: 10px;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+.main-title .thin {
+	font-weight: 200;
+}
+
+
+

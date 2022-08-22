@@ -1,0 +1,219 @@
+* {
+    margin: 0 0 0 0px;
+    padding: 0;
+}
+
+body {
+    background: url(../img/Background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position : center;
+}
+
+#wrapper {
+    width: 100%;
+}
+
+#banner {
+    width: 100%;
+    top: 0px;
+    height: 570px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bannerimg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#divlogo {
+    /*border :1px solid;*/
+    /*display: none;*/
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 20%;
+    left: 42.8%;
+    transition: all 1.5s ease;
+}
+
+    #divlogo img {
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        /*display: none;*/
+    }
+
+#resmenu {
+    display: none;
+}
+
+.mk_center {
+    margin-left: 25%;
+}
+
+
+
+
+#menu {
+    /*border: 1px solid;*/
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(52, 73, 94,0.7);
+    height: 50px;
+    overflow: auto;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+    #menu h1 {
+        display: none;
+    }
+
+
+
+    #menu ul {
+        height: 100%;
+        width: 100%;
+        font-family: Times New Roman;
+        /*font-size: 20px;*/
+    }
+
+        #menu ul li {
+            float: left;
+            list-style: none;
+            cursor: pointer;
+        }
+
+            #menu ul li a {
+                color: White;
+                margin: 0 10px;
+                font-size: 18px;
+                text-decoration: none;
+                display: block;
+                padding: 12px;
+                /*border-right: 1px solid;*/
+                transition: background 1s;
+            }
+
+                #menu ul li a:hover {
+                    background: rgb(38, 167, 155);
+                    color: white;
+                    font-size: 18px;
+                    font-family: Times New Roman;
+                    font-weight: bolder;
+                }
+
+#sitebody {
+    /*border : 1px solid;*/
+    width: 100%;
+    /*height:800px;*/
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.special {
+    /*color: white;*/
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font: bold 52px Helvetica, Arial, Sans-Serif;
+    text-shadow: 1px 1px #fe4902, 2px 2px #fe4902, 3px 3px #fe4902;
+    -webkit-transition: all 0.12s ease-out;
+    -moz-transition: all 0.12s ease-out;
+    -ms-transition: all 0.12s ease-out;
+    -o-transition: all 0.12s ease-out;
+}
+
+    .special:hover {
+        position: relative;
+        top: -3px;
+        left: -3px;
+        text-shadow: 1px 1px #fe4902, 2px 2px #fe4902, 3px 3px #fe4902, 4px 4px #fe4902, 5px 5px #fe4902, 6px 6px #fe4902;
+    }
+
+
+.record {
+    float: left;
+    background: white;
+    border: 1px solid black;
+    height: 350px;
+    width: 230px;
+    margin: 20px 34px;
+}
+
+.vegimg {
+    height: 62%;
+    width: 70%;
+    /*border: 1px solid black;*/
+    margin: 10px 25px;
+    /*box-shadow: 12px 0px  #888888;*/
+}
+
+    .vegimg img {
+        width: 100%;
+        height: 100%;
+    }
+
+.prodname, #rs {
+    color: #8B0000;
+}
+
+.decription {
+    color: #838B8B;
+}
+
+.prodname {
+    width: 100%;
+}
+
+#rs, .prodname {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#addbtn {
+    margin-top: 5%;
+    /*margin-right: 5%; */
+}
+
+#tocart {
+    height: 27px;
+    cursor: pointer;
+    font-size: 18px;
+    background: rgb(192,101,18);
+    color: white;
+    font-family: cursive;
+}
+
+
+#top {
+    position: fixed;
+    /*border: 1px solid;*/
+    width: 40px;
+    height: 40px;
+    background: url(img/icon_top.png);
+    z-index: 100px;
+    bottom: 10%;
+    right: 5%;
+    display: none;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#footer {
+    /*border: 1px solid;*/
+    /*position: fixed;*/
+    height: 100px;
+    width: 100%;
+    background: rgb(34,17,0);
+}
+
+    #footer p {
+        font-size: 16px;
+        /*font-family:*/
+        color: white;
+        text-align: center;
+    }
